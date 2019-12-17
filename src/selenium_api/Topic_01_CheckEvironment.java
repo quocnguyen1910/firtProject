@@ -16,11 +16,11 @@ public class Topic_01_CheckEvironment {
 	
 	@BeforeClass
 	public void beforeClass() {
-		// Chrome
-		System.setProperty("webdriver.chrome.driver",".\\lib\\chromedriver.exe");
-		driver = new ChromeDriver();
+//		// Chrome
+//		System.setProperty("webdriver.chrome.driver",".\\lib\\chromedriver.exe");
+//		driver = new ChromeDriver();
 		// Fifox
-//		driver = new FirefoxDriver();
+		driver = new FirefoxDriver();
 		driver.get("http://google.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
